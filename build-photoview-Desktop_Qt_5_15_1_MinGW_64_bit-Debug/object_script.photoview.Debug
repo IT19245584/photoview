@@ -1,0 +1,13 @@
+debug/login.o
+debug/main.o
+debug/home.o
+debug/photoviewpage.o
+debug/registration.o
+debug/reset.o
+debug/viewoneimage.o
+debug/moc_home.o
+debug/moc_login.o
+debug/moc_photoviewpage.o
+debug/moc_registration.o
+debug/moc_reset.o
+debug/moc_viewoneimage.o

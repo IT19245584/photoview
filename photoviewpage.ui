@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>photoViewPage</class>
+ <widget class="QWidget" name="photoViewPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1103</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PhotoView</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>D:/projects/photoviewer/PhotoView/multimedia-photo-viewer-icon.png</normaloff>D:/projects/photoviewer/PhotoView/multimedia-photo-viewer-icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	background-color: qlineargradient(spread:pad, x1:0.511, y1:0, x2:0.483, y2:1, stop:0 rgba(18, 190, 150, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+  </property>
+  <widget class="QTreeView" name="treeView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>491</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+    background:white;
+}</string>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>60</y>
+     <width>571</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::CustomContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+    background:white;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_search">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>30</y>
+     <width>481</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+    border-radius: 5px;
+	border: 1px solid #848484;
+	outline:0;
+padding-left:2px;
+background:white;
+	box-shadow: 2px 3px 15px #848484;
+   padding-top:2px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>10</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+		color: white;
+background:transparent;
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Search Image Using Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="searchBtn">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>30</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+background-color:rgb(13, 124, 100);
+border-radius:2px;
+letter-spacing:1px;
+font-size:13px;
+color:white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_image_format">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>30</y>
+     <width>201</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+    border-radius: 5px;
+	border: 1px solid #848484;
+	outline:0;
+padding-left:2px;
+background:white;
+	box-shadow: 2px 3px 15px #848484;
+   padding-top:2px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>10</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+		color: white;
+background:transparent;
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Allowed Image Formats&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addImage">
+   <property name="geometry">
+    <rect>
+     <x>439</x>
+     <y>30</y>
+     <width>61</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+background-color:rgb(13, 124, 100);
+border-radius:2px;
+letter-spacing:1px;
+font-size:13px;
+color:white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="imFormat">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>161</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+    border-radius: 5px;
+	border: 1px solid #848484;
+	outline:0;
+padding-left:2px;
+background:white;
+	box-shadow: 2px 3px 15px #848484;
+   padding-top:2px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>989</x>
+     <y>620</y>
+     <width>101</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+background-color:rgb(13, 124, 100);
+border-radius:2px;
+letter-spacing:1px;
+font-size:13px;
+color:white;
+}</string>
+   </property>
+   <property name="text">
+    <string>More Options</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="filter">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>30</y>
+     <width>41</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+background-color:rgb(13, 124, 100);
+border-radius:2px;
+letter-spacing:1px;
+font-size:13px;
+color:white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Filter</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{
+		color: white;
+background:transparent;
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Select Image Type&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <zorder>listView</zorder>
+  <zorder>treeView</zorder>
+  <zorder>txt_search</zorder>
+  <zorder>label_3</zorder>
+  <zorder>searchBtn</zorder>
+  <zorder>txt_image_format</zorder>
+  <zorder>label_4</zorder>
+  <zorder>addImage</zorder>
+  <zorder>imFormat</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>filter</zorder>
+  <zorder>label_6</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

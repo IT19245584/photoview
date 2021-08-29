@@ -1,0 +1,13 @@
+release/login.o
+release/main.o
+release/home.o
+release/photoviewpage.o
+release/registration.o
+release/reset.o
+release/viewoneimage.o
+release/moc_home.o
+release/moc_login.o
+release/moc_photoviewpage.o
+release/moc_registration.o
+release/moc_reset.o
+release/moc_viewoneimage.o
